@@ -33,3 +33,13 @@ self.addEventListener('fetch', (e) => {
     return response;
   })());
 });
+
+
+self.addEventListener('activate', (e) => {
+    e.waitUntil(caches.keys().then((keyList) => {
+      Promise.all(keyList.map((key) => {
+        if (key === cacheName) { return; }
+        caches.delete(key);
+      }))
+    })());
+  });
