@@ -3,7 +3,7 @@
   "name": "xChange — All Currencies In Your Pocket",
   "description": "test",
   "start_url": "https://kulikovsasha.github.io/pwa/",
-  "display": "minimal-ui",
+  "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#543388",
   "icons": [
